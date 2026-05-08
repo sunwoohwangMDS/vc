@@ -13,11 +13,7 @@ void test(){
 int i=0;
 i=3;
 }
-void test2(){
 
-int i=0;
-i=3;
-}
 /* This function will add a free dessert to specific orders based on the 
    entree, salad, and beverage choice */
 void Add_Included_Dessert(struct order_type* Order)
@@ -35,7 +31,23 @@ void Add_Included_Dessert(struct order_type* Order)
     Order->Dessert = CAKE;  
   }
 }
-
+/* This function will add a free dessert to specific orders based on the 
+   entree, salad, and beverage choice */
+void Add_Included_Dessert2(struct order_type* Order)
+{
+  if(Order->Entree == STEAK &&
+     Order->Salad == CAESAR &&
+     Order->Beverage == MIXED_DRINK) {
+    
+    Order->Dessert = CAKE;
+  
+  } else if(Order->Entree == LOBSTER &&
+            Order->Salad == GREEN &&
+            Order->Beverage == WINE) {
+    
+    Order->Dessert = CAKE;  
+  }
+}
 int Place_Order(table_index_type Table,
                 seat_index_type Seat,
                 struct order_type Order)
