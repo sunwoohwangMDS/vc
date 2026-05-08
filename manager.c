@@ -13,7 +13,11 @@ void test(){
 int i=0;
 i=3;
 }
+void test2(){
 
+int i=0;
+i=4;
+}
 /* This function will add a free dessert to specific orders based on the 
    entree, salad, and beverage choice */
 void Add_Included_Dessert(struct order_type* Order)
