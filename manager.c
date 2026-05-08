@@ -16,7 +16,7 @@ i=3;
 void test2(){
 
 int i=0;
-i=4;
+i=3;
 }
 /* This function will add a free dessert to specific orders based on the 
    entree, salad, and beverage choice */
