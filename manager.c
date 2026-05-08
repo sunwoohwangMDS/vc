@@ -11,7 +11,7 @@ static unsigned int WaitingListIndex = 0;
 void test(){
 
 int i=0;
-i=2;
+i=3;
 }
 
 /* This function will add a free dessert to specific orders based on the 
