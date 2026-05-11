@@ -37,7 +37,8 @@ int Place_Order(table_index_type Table,
                 struct order_type Order)
 {
   struct table_data_type Table_Data;
-
+int temp=0;
+temp=1;
   Table_Data = Get_Table_Record(Table);
 
   Table_Data.Is_Occupied = v_true;
